@@ -14,6 +14,13 @@ Precise spatial-temporal annotation of laparoscopic videos is time-consuming and
 
 The model consists of a frozen DINOv3 frame‑wise feature extractor followed by a trainable temporal consistency network. Given a raw video clip, each frame is passed independently through DINOv3 to obtain per‑frame spatial feature maps. We chose DINOv3 over other backbones as evidence showing that it can outperform several popular foundation models (e.g., CLIP and SAM) in downstream dense prediction tasks that lie outside the pretraining domain of those foundation models. These features are then aggregated across time by the temporal consistency network, which enforces spatially coherent activations between adjacent frames. The network has two prediction heads: (1) a video‑level classification prediction for weak supervision, and (2) a dense prediction head that produces a class activation map (CAM) of size, localizing tools throughout the entire clip without requiring pixel‑level annotations.
 
+<p align="center">
+  <img src="./figure/accuracy_combined.jpg" width="80%" />
+</p>
+
+<p align="center">
+  <img src="./figure/boxplot_manual_vs_al.png" width="80%" />
+</p>
 Our method achieved 38% reduction in annotation time compared with fully manual segmentation.It improved in segmentation of minority surgical tool classes, and the combined pipeline showed a better localization score compared to pure Weakly Supervised learning.
 
 ## Repository Overview
