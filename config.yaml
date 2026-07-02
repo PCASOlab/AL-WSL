@@ -1,0 +1,31 @@
+
+
+# Active Learning Configuration
+active_learning:
+  ssh_private_key_path: ""
+  project_title: ""
+  project_hash: ""
+  max_rounds: 15
+  loss_threshold: 0.01
+  max_epochs_per_round: 5
+  uncertainty_threshold: 0.3
+  active_learning_interval: 10
+  
+
+# Data Paths (adjust as needed)
+paths:
+  video_path: "./output_pkl_croped"
+  cholec_gt_dir: "./cholec_pkl/"
+  original_videos_dir: "./vidsall/"
+  sam_feature_olg_dir: "./sam_feature_OLG2/"
+
+# Dataset Selection
+dataset:
+  selected_data: ["Cholec"]
+  AL_folder: "IPAL5"
+  checkpt_dir: "IP5_al"
+  num_videos: 5
+  min_minor_videos: 3
+  
+wsl:
+  mask_loss: 0.1
