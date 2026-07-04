@@ -2,7 +2,7 @@
 
 ## Description
 This is an official implementation of the Active Learning with Weak Supervision and Mask loss model. 
-> [Active Learning for Efficient Annotation of Surgical Videos with Weak Supervision] | IPCAI 2025
+> [Active Learning for Efficient Annotation of Surgical Videos with Weak Supervision] | IPCAI 2026
 
 
 ## Abstract
